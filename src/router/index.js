@@ -29,6 +29,12 @@ const routes = [
     name: "Projects",
     component: () => import("../views/ProjectsView.vue"),
   },
+  {
+    path: "/article/:id",
+    name: "ArticleDetail",
+    component: () => import("../views/ArticleDetailsView.vue"),
+    props: true,
+  },
 ];
 
 const router = new VueRouter({

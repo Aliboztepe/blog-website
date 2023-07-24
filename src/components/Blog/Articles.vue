@@ -1,9 +1,11 @@
 <template>
     <div :class="getColumnClass()">
-        <div v-for="article in articles" :key="article.id" class="article">
+        <router-link v-for="article in articles" :key="article.id"
+            :to="{ name: 'ArticleDetail', params: { id: article.id } }" class="article">
             <img :src="article.imageUrl" alt="" class="article-img">
             <p class="article-title">{{ article.title }}</p>
-        </div>
+        </router-link>
+
     </div>
 </template>
 
@@ -56,6 +58,7 @@ export default {
             margin: 10px auto;
             max-width: 270px;
             @include font($first-font, 15px, 500, black);
+            text-decoration: none;
         }
     }
 }
