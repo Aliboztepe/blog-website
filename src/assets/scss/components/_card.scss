@@ -1,0 +1,5 @@
+.card {
+  @include grid-container(1);
+  width: 40%;
+  justify-content: center;
+}
