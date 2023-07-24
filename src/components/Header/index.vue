@@ -1,7 +1,6 @@
 <template>
-  <div>
-    <header>
-      <div class="logo">Nordic Rose</div>
+    <header class="header">
+      <div class="header__logo">Nordic Rose</div>
       <button v-if="isMobile" class="hamburger" @click="toggleMenu">
         <span v-if="!showMenu">&#9776;</span>
         <span class="close-hamburger" v-else>&#10006;</span>
@@ -12,7 +11,6 @@
         <router-link to="/blog" class="nav-link">Blog</router-link>
       </nav>
     </header>
-  </div>
 </template>
 
 <!-- 
@@ -54,9 +52,8 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem;
-  background-color: #f2f2f2;
-  padding: 2.5em;
+  padding: 1rem 0;
+  background-color: white;
 }
 
 .logo {

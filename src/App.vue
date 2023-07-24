@@ -1,21 +1,23 @@
 <template>
   <div id="app">
-    <nav>
-      <Header />
-    </nav>
-    <router-view/>
+    <TheContainer>
+      <TheHeader />
+      <router-view />
+    </TheContainer>
   </div>
 </template>
 
 <script>
-
-import Header from '@/components/Header'
+import TheHeader from "@/components/Header";
+import TheContainer from "@/components/shared/TheContainer.vue";
 
 export default {
+  name: "App",
   components: {
-    Header
-  }
-}
+    TheHeader,
+    TheContainer,
+  },
+};
 </script>
 
 <style lang="scss">
@@ -26,5 +28,4 @@ export default {
   text-align: center;
   color: #2c3e50;
 }
-
 </style>
