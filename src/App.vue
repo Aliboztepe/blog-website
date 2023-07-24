@@ -2,8 +2,8 @@
   <div id="app">
     <nav>
       <router-link to="/">BLOG</router-link> |
-      <router-link to="/about">ABOUT</router-link>
-      <router-link to="/links">LINKS</router-link>
+      <router-link to="/about">ABOUT</router-link> |
+      <router-link to="/links">LINKS</router-link> |
       <router-link to="/projects">PROJECTS</router-link>
     </nav>
     <router-view/>
@@ -17,9 +17,5 @@
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-}
-
-nav {
-  
 }
 </style>

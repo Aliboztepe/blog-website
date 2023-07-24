@@ -1,13 +1,22 @@
 <template>
     <div class="blog">
-        <h1>This is a blog page.</h1>
+        <Content></Content>
     </div>
 </template>
 
 <script>
+import Content from '@/components/content';
+
 export default {
+    components: { Content },
     name: 'Blog',
 }
 </script>
 
-<style scoped lang="scss" scoped></style>
+<style scoped lang="scss">
+.blog {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+</style>

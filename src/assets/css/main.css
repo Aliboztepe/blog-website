@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700&display=swap");
+@import url("https://fonts.cdnfonts.com/css/sf-mono");
+@import url("https://fonts.cdnfonts.com/css/sf-pro-display");
+@import url("https://fonts.cdnfonts.com/css/new-york-extra-large");
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  -ms-box-sizing: border-box !important;
+  box-sizing: border-box !important;
+}
+
+li {
+  list-style: none;
+}
+
+select,
+input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+/* 
+Use any margin is below.
+
+.-mb-lg {
+  margin-bottom: $lg;
+}
+
+*/
+/* 
+Use any gap is below.
+
+.-gap-xxs {
+  gap: $xxs;
+}
+
+*/
+/* 
+Use any margin is below.
+
+.-pd-lg {
+  padding: $lg;
+}
+
+*/
+.title {
+  font-family: "Inter", sans-serif;
+  font-size: 36px;
+  font-weight: 700;
+  color: #000000;
+}
+
+.hr {
+  border-top: 2px solid #000000;
+  margin-bottom: 24px;
+}
+.hr.-dashed {
+  border-top: 2px dotted #000000;
+}
+
+.f {
+  display: flex;
+}
+.f.-row {
+  flex-direction: row;
+}
+.f.-column {
+  flex-direction: column;
+}
+.f.-g-8 {
+  gap: 8px;
+}
+.f.-g-16 {
+  gap: 16px;
+}
+.f.-g-24 {
+  gap: 24px;
+}
+.f.-between {
+  justify-content: space-between;
+}
+.f.-center {
+  justify-content: center;
+}
+.f.-start {
+  text-align: start;
+}
+.f.-mb-50 {
+  margin-bottom: 50px;
+}
+.f.-mb-100 {
+  margin-bottom: 100px;
+}/*# sourceMappingURL=main.css.map */
