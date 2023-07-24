@@ -1,14 +1,24 @@
 <template>
   <div id="app">
-    <nav>
-      <router-link to="/">BLOG</router-link> |
-      <router-link to="/about">ABOUT</router-link>
-      <router-link to="/links">LINKS</router-link>
-      <router-link to="/projects">PROJECTS</router-link>
-    </nav>
-    <router-view />
+    <TheContainer>
+      <TheHeader />
+      <router-view />
+    </TheContainer>
   </div>
 </template>
+
+<script>
+import TheHeader from "@/components/Header";
+import TheContainer from "@/components/shared/TheContainer.vue";
+
+export default {
+  name: "App",
+  components: {
+    TheHeader,
+    TheContainer,
+  },
+};
+</script>
 
 <style lang="scss">
 #app {
