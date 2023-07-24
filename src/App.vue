@@ -3,7 +3,7 @@
     <nav>
       <Header />
     </nav>
-    <router-view/>
+    <router-view />
   </div>
 </template>
 
@@ -27,4 +27,6 @@ export default {
   color: #2c3e50;
 }
 
+nav {
+}
 </style>
