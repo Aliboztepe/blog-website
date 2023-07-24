@@ -10,7 +10,7 @@
 </template>
 
 <script>
-import Articles from './Articles.vue'
+import Articles from '@/components/Blog/Articles.vue';
 import HeroCard from "@/components/card/HeroCard.vue";
 
 export default {

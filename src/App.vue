@@ -18,10 +18,4 @@
   text-align: center;
   color: #2c3e50;
 }
-
-<<<<<<< Updated upstream
-nav {
-}
-=======
->>>>>>> Stashed changes
 </style>
