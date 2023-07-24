@@ -1,12 +1,27 @@
 .card {
-  @include grid-container(1);
-  width: 40%;
-  justify-content: center;
+  &__image {
+    width: 100%;
+    height: 100%;
+  }
 
-  .title {
-    @include grid-item(1, 1, 1, 1);
-    &.-sub {
-      @include grid-item(1, 1, 1, 2);
+  &.-hero {
+    width: 858px;
+    margin: 0px auto;
+    @include grid-container(1, $sp-lg);
+    justify-content: center;
+
+    .title.-sub {
+      width: 592px;
+      margin: 0px auto;
+    }
+
+    &.-details {
+      .title {
+        @include grid-item(1, 1, 1, 1);
+        &.-sub {
+          @include grid-item(1, 1, 1, 2);
+        }
+      }
     }
   }
 }
