@@ -1,0 +1,56 @@
+.newsletter {
+  &.-container {
+    width: 640px;
+    height: 325px;
+    flex-shrink: 0;
+    @include border(1px, solid, $black, 0);
+    background: $white;
+  }
+
+  &.-title {
+    @include font($primary-font, $fs-xl, $font-bold, $dark-gray);
+    text-align: center;
+    margin-top: 62px;
+  }
+
+  &.-text {
+    @include font($fourth-font, $fs-sm, $font-regular, $dark-gray);
+    text-align: center;
+    margin-top: 18px;
+    margin-left: 51px;
+    margin-right: 51px;
+  }
+
+  &.-input {
+    @include border(1px, solid, $black, 0);
+    @include font($fourth-font, $fs-sm, $font-regular, $black);
+    width: 413px;
+    height: 54px;
+    flex-shrink: 0;
+    background: $white;
+    margin-top: 36px;
+    margin-bottom: 59px;
+    padding: 15px;
+  }
+
+  &.-btn {
+    @include font($fourth-font, $fs-sm, $font-bold, $white);
+    width: 139px;
+    height: 54px;
+    flex-shrink: 0;
+    background: $black;
+    border: none;
+    margin-bottom: 59px;
+  }
+
+  &.-bar {
+    width: 640px;
+    height: 12px;
+    flex-shrink: 0;
+    background: $black;
+  }
+
+  &.-wrapper {
+    @include flex(column, center, center, nowrap, 30px);
+  }
+}
