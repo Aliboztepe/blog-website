@@ -1,6 +1,11 @@
-@mixin font($family: $first-font, $size: $fs-md, $weight: $font-bold, $colour: $catalina-blue) {
-    font-family: $family;
-    font-size: $size;
-    font-weight: $weight;
-    color: $colour;
+@mixin font(
+  $family: $first-font,
+  $size: $fs-md,
+  $weight: $font-bold,
+  $color: $black
+) {
+  font-family: $family;
+  font-size: $size;
+  font-weight: $weight;
+  color: $color;
 }

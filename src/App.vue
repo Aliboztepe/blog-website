@@ -6,7 +6,7 @@
       <router-link to="/links">LINKS</router-link>
       <router-link to="/projects">PROJECTS</router-link>
     </nav>
-    <router-view/>
+    <router-view />
   </div>
 </template>
 
@@ -20,6 +20,5 @@
 }
 
 nav {
-  
 }
 </style>

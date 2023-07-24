@@ -1,17 +1,17 @@
 <template>
   <div class="blog">
-    <Blog></Blog>
+    <Blog />
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
-import Blog from '@/components/Blog';
+import Blog from "@/components/Blog";
 
 export default {
-  name: 'BlogView',
+  name: "BlogView",
   components: {
-    Blog
-  }
-}
+    Blog,
+  },
+};
 </script>
