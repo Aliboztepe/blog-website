@@ -1,3 +1,9 @@
 .title {
-    @include font($primary-font, $fs-xl, $font-bold, $black);
+  @include font($primary-font, $fs-xxxl, $font-bold, $black);
+  text-align: center;
+
+  &.-sub {
+    @include font($third-font, $fs-sm, $font-medium, $dark-gray);
+    line-height: 34px;
+  }
 }
