@@ -6,4 +6,8 @@
     @include font($third-font, $fs-sm, $font-medium, $dark-gray);
     line-height: 34px;
   }
+
+  &.-start{
+    text-align: start;
+  }
 }

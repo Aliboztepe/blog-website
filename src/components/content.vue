@@ -1,4 +1,5 @@
 <template>
+    <!-- <div class="content-wrapper"> -->
     <div class="content">
         <hr class="hr">
         <div class="user f -row -between -mb-50">
@@ -21,18 +22,21 @@
         </div>
         <div class="content__text">
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eu velit tempus erat egestas
-                efficitur. In hac habitasse platea dictumst. Fusce a nunc eget ligula suscipit finibus. Aenean pharetra quis
+                efficitur. In hac habitasse platea dictumst. Fusce a nunc eget ligula suscipit finibus. Aenean pharetra
+                quis
                 lacus at viverra.</p>
             <p>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aliquam quis
                 posuere ligula. In eu dui molestie, molestie lectus eu, semper lectus.</p>
-            <p class="title">Next on the pipeline</p>
+            <p class="title -start">Next on the pipeline</p>
             <p>Duis eu velit tempus erat egestas efficitur. In hac habitasse platea dictumst. Fusce a nunc eget ligula
-                suscipit finibus. Aenean pharetra quis lacus at viverra. Class aptent taciti sociosqu ad litora torquent per
+                suscipit finibus. Aenean pharetra quis lacus at viverra. Class aptent taciti sociosqu ad litora torquent
+                per
                 conubia nostra, per inceptos himenaeos.</p>
             <p>Morbi efficitur auctor metus, id mollis lorem pellentesque id. Nullam posuere maximus dui et
                 fringilla.</p>
             <div class="content__picture">
-                <img src="@/assets/images/pho.png" alt="">Image caption centered this way and I'll make this a bit longer to
+                <img src="@/assets/images/pho.png" alt="">Image caption centered this way and I'll make this a bit
+                longer to
                 indicate the amount of line-height.
             </div>
             <p>A list looks like this:</p>
@@ -62,6 +66,7 @@
                 participant, Zippie advisor, Wolt co-founder, and Nordic Rose stakeholder.</p>
         </div>
     </div>
+    <!-- </div> -->
 </template>
 
 <script>
@@ -69,7 +74,7 @@ import BaseText from "@/components/BaseText.vue";
 
 
 export default {
-  components: { BaseText },
+    components: { BaseText },
     name: "Content",
     data() {
         return {
@@ -84,7 +89,10 @@ export default {
 
 <style lang="scss" scoped>
 .content {
-    width: 100vh;
+    // width: 100vh;
+    width: 850px;
+    margin: 0 auto;
+
     display: flex;
     flex-direction: column;
     font-family: $secondary-font;
@@ -93,13 +101,15 @@ export default {
     &__text {
         display: flex;
         flex-direction: column;
-        gap:52px;
+        gap: 52px;
         font-size: $fs-sm;
         font-weight: $font-regular;
         text-align: start;
     }
 
     &__picture {
+        display: flex;
+        flex-direction: column;
         gap: 12px;
         font-size: $fs-xs;
         font-weight: $font-medium;
@@ -109,6 +119,7 @@ export default {
 
 .user {
     font-family: $secondary-font;
+
     &__img {
         border-radius: 50%;
     }
@@ -124,7 +135,7 @@ export default {
     @include font($secondary-font, $fs-xs, $font-medium, $black);
 
     &.-with-text {
-        width: 390px;//?
+        width: 390px; //?
         height: 64px;
     }
 
