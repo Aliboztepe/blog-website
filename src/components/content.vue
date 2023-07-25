@@ -37,9 +37,9 @@
             </div>
             <p>A list looks like this:</p>
             <ul class="rotated-square">
-                <li>First item in the list</li>
-                <li>Second item in the list lorem ipsum dolor sit amet nunc felis</li>
-                <li>Third item in the list</li>
+                <li class="rotated-square__element">First item in the list</li>
+                <li class="rotated-square__element">Second item in the list lorem ipsum dolor sit amet nunc felis</li>
+                <li class="rotated-square__element">Third item in the list</li>
             </ul>
             <p>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aliquam quis
                 posuere ligula.</p>
@@ -82,33 +82,21 @@ export default {
 }
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 .content {
     width: 100vh;
-
+    
     &__text {
-        display: flex;
-        flex-direction: column;
-        gap: 52px;
+        @include flex(column, baseline, baseline, nowrap, 52px);
+        @include font($secondary-font, $fs-sm, $font-regular, $black);
         text-align: start;
-        font-family: $secondary-font;
-        font-size: $fs-sm;
-        font-weight: $font-regular;
     }
 
     &__picture {
-        // width: 854px;
-        // height: 570px;
-        display: flex;
-        flex-direction: column;
-        // justify-content: center;
-        // align-items: center;
+
+        @include flex(column, baseline, baseline, nowrap, $fs-xxs);
+        @include font($secondary-font, $fs-xs, $font-medium, $black);
         text-align: center;
-        gap: $fs-xxs;
-        font-family: $secondary-font;
-        color: $black;
-        font-size: $fs-xs;
-        font-weight: $font-medium;
     }
 }
 
@@ -122,36 +110,26 @@ export default {
 .icon {
     width: 70px;
     height: 44px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flex(row, center, center, nowrap, $sp-md);
     background-color: $white;
     cursor: pointer;
-    gap: 16px;
-
-    color: $black;
     text-decoration: none;
-
-    font-family: $secondary-font;
-    font-size: $fs-xs;
-    font-weight: $font-medium;
+    @include font($secondary-font, $fs-xs, $font-medium, $black);
 
     &.-with-text {
-        width: 100vh;
+        width: 390px;//?
         height: 64px;
     }
 
     @include border(1px, solid, $gray, $sp-xxs);
-    box-shadow: 0px 1px 4px 0px rgba($color: $black, $alpha: 0.1);
+    box-shadow: $shadow-min;
 }
 
 .rotated-square {
     list-style-type: square;
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
+    @include flex(column, baseline, baseline, nowrap, 24px);
 
-    & li {
+    &__element {
         position: relative;
         padding-left: 20px;
 

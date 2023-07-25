@@ -5,7 +5,7 @@
   <script>
   export default {
       name:"BaseText",
-      probs: {
+      props: {
         size:{
           type: String,
         }

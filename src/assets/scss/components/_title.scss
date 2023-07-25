@@ -1,3 +1,3 @@
 .title {
-    @include font($first-font, $fs-xl, $font-bold, $black);
+    @include font($primary-font, $fs-xl, $font-bold, $black);
 }
