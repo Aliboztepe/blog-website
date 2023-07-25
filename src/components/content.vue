@@ -5,9 +5,9 @@
             <div class="f -row -g-16">
                 <img class="user__img" src="@/assets/images/photo.png" alt="">
                 <div class="f -column -center -start -g-8">
-                    <p class=""><b>MIA MATIKAINEN</b></p>
+                    <p class="user__name"><b>MIA MATIKAINEN</b></p>
                     <!-- <BaseText class="text secondary fs-xs bold">MIA MATIKAINEN</BaseText> -->
-                    <p>Apr 15, 2020 · 4 min read</p>
+                    <p class="">Apr 15, 2020 · 4 min read</p>
                 </div>
             </div>
             <div class="f -row">
@@ -85,17 +85,24 @@ export default {
 <style lang="scss" scoped>
 .content {
     width: 100vh;
-    
+    display: flex;
+    flex-direction: column;
+    font-family: $secondary-font;
+    color: $black;
+
     &__text {
-        @include flex(column, baseline, baseline, nowrap, 52px);
-        @include font($secondary-font, $fs-sm, $font-regular, $black);
+        display: flex;
+        flex-direction: column;
+        gap:52px;
+        font-size: $fs-sm;
+        font-weight: $font-regular;
         text-align: start;
     }
 
     &__picture {
-
-        @include flex(column, baseline, baseline, nowrap, $fs-xxs);
-        @include font($secondary-font, $fs-xs, $font-medium, $black);
+        gap: 12px;
+        font-size: $fs-xs;
+        font-weight: $font-medium;
         text-align: center;
     }
 }
