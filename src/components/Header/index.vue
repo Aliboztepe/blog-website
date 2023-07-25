@@ -3,7 +3,7 @@
     <div class="header__logo">Nordic Rose</div>
     <button v-if="isMobile" class="header__hamburger" @click="toggleMenu">
       <span v-if="!showMenu">&#9776;</span>
-      <span class="close-hamburger" v-else>&#10006;</span>
+      <span v-else>&#10006;</span>
     </button>
     <nav :class="isMobile && showMenu ? 'header__mobile' : 'header__desktop'">
       <router-link to="/" exact class="nav-link">Home</router-link>
@@ -68,7 +68,6 @@ export default {
   }
 
   &__desktop {
-    border: 1px solid;
     display: flex;
     a {
       padding: 0.5rem;
