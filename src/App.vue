@@ -4,6 +4,7 @@
       <TheHeader />
       <router-view />
       <TheNewsletter />
+      <TheFooter />
     </TheContainer>
   </div>
 </template>
@@ -12,6 +13,7 @@
 import TheHeader from "@/components/Header";
 import TheContainer from "@/components/shared/TheContainer.vue";
 import TheNewsletter from "@/components/newsletterCard";
+import TheFooter from "@/components/footer";
 
 export default {
   name: "App",
@@ -19,6 +21,7 @@ export default {
     TheHeader,
     TheContainer,
     TheNewsletter,
+    TheFooter,
   },
 };
 </script>
