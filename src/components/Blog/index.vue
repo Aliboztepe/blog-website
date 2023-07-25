@@ -1,7 +1,7 @@
 <template>
     <div class="blog">
         <hero-card :image-src="heroCard.imageSrc" :title="heroCard.title" :sub-title="heroCard.subTitle" />
-
+        <Content></Content>
         <div class="article-wrapper">
             <h1 class="title">All Articles</h1>
             <articles :column-count="2"></articles>
@@ -12,14 +12,16 @@
 <script>
 import Articles from '@/components/Blog/Articles.vue';
 import HeroCard from "@/components/card/HeroCard.vue";
+import Content from '@/components/content';
 
 export default {
     name: "Blog",
     components: {
         HeroCard,
-        Articles
+        Articles,
+        Content,
     },
-    data() {
+        data() {
         return {
             heroCard: {
                 imageSrc:
